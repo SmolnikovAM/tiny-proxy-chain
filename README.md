@@ -1,10 +1,14 @@
 # Tiny Proxy Chain
 
-Proxy in-the-middle
+Tiny Proxy Chain is a lightweight tool for Node.js that helps set up a chain of proxies for HTTP and HTTPS traffic. It's designed to be easy and straightforward.
 
-```
+### Install
+
+```shell
 npm i -D tiny-proxy-chain
 ```
+
+### Example of usage
 
 ```javascript
 const TinyProxyChain = require('tiny-proxy-chain')
@@ -33,4 +37,12 @@ new TinyProxyChain({
     }
   }
 }).listen()
+```
+
+### Test
+
+To test Tiny Proxy Chain, you'll need Docker installed on your machine.
+
+```js
+npm test
 ```

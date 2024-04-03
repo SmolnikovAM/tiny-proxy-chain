@@ -1,0 +1,6 @@
+FROM node:20
+
+WORKDIR /app
+
+EXPOSE 80
+EXPOSE 443
