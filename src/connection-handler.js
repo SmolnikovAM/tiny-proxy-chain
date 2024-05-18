@@ -201,7 +201,7 @@ class ConnectionHandler extends BaseHandler {
 
     this.clientSocket.write(`${protocol} 200 ${description}\r\n\r\n`)
 
-    this.serverSocket.once('error', this.send500Error.bind(this))
+    this.serverSocket.on('error', this.send500Error.bind(this))
     this.serverSocket.once('end', this.send500Error.bind(this))
 
     this.clientSocket.pipe(this.serverSocket)
